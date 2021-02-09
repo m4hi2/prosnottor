@@ -7,4 +7,4 @@ bp = Blueprint('application', __name__, url_prefix='/')
 
 @bp.route('/', methods=('GET',))
 def index():
-    return render_template('index/index.html.j2')
+    return render_template('application/index.html.j2')
