@@ -28,6 +28,6 @@ def qna():
         ]
         session['context_para'] = context_para
         session['questions'] = questions
-        return redirect(url_for('answers'))
+        return redirect(url_for('application.answers'))
 
     return render_template('application/qna.html.j2')
