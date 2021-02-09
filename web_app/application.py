@@ -67,4 +67,8 @@ def answers():
                 corrected_answer += ' ' + word
         _qna[question] = corrected_answer
 
-    return str(_qna)
+    return render_template(
+        'application/answers.html.j2',
+        qnas=_qna,
+        para=context_para
+    )
