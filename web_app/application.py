@@ -5,7 +5,7 @@ from flask import Blueprint, redirect, render_template, request, session
 from flask.helpers import url_for
 from transformers import AutoTokenizer, BertForQuestionAnswering
 
-modelpath = "../forqa"
+modelpath = "./forqa"
 tokenizer = AutoTokenizer.from_pretrained(modelpath)
 model = BertForQuestionAnswering.from_pretrained(modelpath)
 
