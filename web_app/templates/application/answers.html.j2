@@ -1,0 +1,27 @@
+{% extends "base.html.j2" %}
+
+{% block header %}
+<h1>
+    {% block title %}
+    Answers
+    {% endblock title %}
+</h1>
+{% endblock header %}
+
+{% block content %}
+<p>
+    {{para}}
+</p>
+
+<section>
+    {% for q, a in qnas.items() %}
+    <div class="q">
+        <p>প্রশ্ন: {{q}}</p>
+    </div>
+
+    <div class="a">
+        <p>উত্তর: {{a}}</p>
+    </div>
+    {% endfor %}
+</section>
+{% endblock content %}
