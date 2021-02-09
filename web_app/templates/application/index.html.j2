@@ -1,19 +1,20 @@
 {% extends "base.html.j2" %}
- 
+
 {% block header %}
-    <h1>
+<h1>
     {% block title %}
     Prosnottor
     {% endblock title %}
-    </h1>
+</h1>
 {% endblock header %}
 
 {% block content %}
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facilis recusandae fugit est, dolorum, pariatur quia numquam iure, voluptas cupiditate vel dolorem tempore exercitationem eaque incidunt animi earum sint quasi.
+<div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facilis recusandae fugit est, dolorum, pariatur
+        quia numquam iure, voluptas cupiditate vel dolorem tempore exercitationem eaque incidunt animi earum sint quasi.
 
-        </p>
-    </div>
-    <div><a href="{{ url_for('application.qna') }}">Q/A</a></div>
+    </p>
+</div>
+<div><a href="{{ url_for('application.qna') }}">Q/A</a></div>
 {% endblock content %}
