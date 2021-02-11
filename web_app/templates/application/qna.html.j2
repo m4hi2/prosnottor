@@ -1,0 +1,24 @@
+{% extends "base.html.j2" %}
+
+{% block header %}
+<h1>
+    {% block title %}
+    Question and Answer Input Page
+    {% endblock title %}
+</h1>
+{% endblock header %}
+
+{% block content %}
+<form method="post">
+    <label for="context">Context Paragraph</label>
+    <textarea name="context" id="context" cols="30" rows="10"></textarea>
+    <label for="question1">Question 1:</label>
+    <input type="text" name="question1" class="question">
+    <label for="quesiton2">Question 2:</label>
+    <input type="text" name="question2" class="question">
+    <label for="question3">Question 3:</label>
+    <input type="text" name="question3" class="quesiton">
+    <input type="submit" value="Get the Answers">
+</form>
+
+{% endblock content %}

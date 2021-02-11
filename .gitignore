@@ -2,3 +2,4 @@ forqa/*
 venv/*
 .vscode/*
 test*
+*.pyc
