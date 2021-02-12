@@ -10,14 +10,23 @@
 
 {% block content %}
 <form method="post">
-    <label for="context">Context Paragraph</label>
-    <textarea name="context" id="context" cols="30" rows="10"></textarea>
-    <label for="question1">Question 1:</label>
-    <input type="text" name="question1" class="question">
-    <label for="quesiton2">Question 2:</label>
-    <input type="text" name="question2" class="question">
-    <label for="question3">Question 3:</label>
-    <input type="text" name="question3" class="quesiton">
+    <div class="mb-3">
+        <label for="context" class="form-label">Context Paragraph:</label>
+        <textarea name="context" id="context" cols="30" rows="10" class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="question1" class="form-label">Question 1:</label>
+        <input type="text" name="question1" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="quesiton2" class="form-label">Question 2:</label>
+        <input type="text" name="question2" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="question3" class="form-label">Question 3:</label>
+        <input type="text" name="question3" class="form-control">
+    </div>
+
     <input type="submit" value="Get the Answers">
 </form>
 
